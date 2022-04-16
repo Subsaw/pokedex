@@ -40,6 +40,7 @@ export default class PokemonCard extends Component {
             ) : null}
             <figure><img 
             alt="Shoes"
+            class="w-32"
             src={this.state.imageUrl}
                 onLoad={() => this.setState({ imageLoading: false })}
                 onError={() => this.setState({ toManyRequests: true })}
@@ -56,7 +57,7 @@ export default class PokemonCard extends Component {
                 {this.state.name}
               </h2>
               <div class="card-actions justify-end">
-                <div class="badge badge-outline">Fashion</div>
+                <div class="badge badge-outline">Lorem</div>
               </div>
             </div>
           </div>

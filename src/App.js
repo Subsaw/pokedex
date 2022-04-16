@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/layout/Dashboard';
 import NavBar from './components/layout/NavBar';
@@ -9,10 +9,10 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Dashboard/>} />
-          <Route path="/pokemon/:pokemonIndex" element={<Pokemon/>} />
-        </Routes>
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/pokemon/:pokemonIndex" component={Pokemon} />
+        </Switch>
       </div>
     </Router>
   );
