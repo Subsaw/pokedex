@@ -1,3 +1,9 @@
+# APP
+
+I didn't make a button to load more pokemons. \
+The website has two themes, but they are set depending on the browser / operating system theme.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
